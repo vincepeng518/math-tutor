@@ -1,18 +1,30 @@
-# math-tutor
+# study-tutor
 
-大學數學逐題家教的 Codex skill。貼數學題目圖片或文字，它會先把題目轉成文字，再給：
+大學課業逐題家教的 Codex skill，順便練英文。數學、物理、程式、經濟、會計、申論題都能貼。它會先把題目轉成文字，再給：
 
 1. **題目**：圖片轉成的文字
 2. **思路**：1～2 句白話
-3. **考卷寫法**：手寫考試可拿滿分的最簡寫法
+3. **考卷寫法**：考試可拿滿分的最簡寫法（計算題、程式題、申論題各有寫法）
 4. **重點**：最容易卡住的步驟或常見錯誤
+5. **English**：這題的原文術語，加一句英文寫出核心步驟
 
-短指令：「為什麼」、「再一題」、「題目抄錯了」；也可以貼自己的手寫解法請它檢查。
+## 短指令
+
+| 指令 | 效果 |
+|---|---|
+| 為什麼 | 只解釋你卡住的那一步 |
+| 再一題 | 出同類型題目，寫完幫你檢查 |
+| 題目抄錯了 | 用更正版本重解 |
+| 英文模式 / English mode | 整份改英文回覆 |
+| 中文模式 | 回到中文 |
+| 關掉英文 / 打開英文 | 關閉或恢復 English 區塊 |
+
+用英文問問題或回答時，回覆最後會附「English fix」，幫你改不自然的句子。
 
 ## 安裝
 
-把 `math-tutor` 資料夾複製到 `~/.codex/skills/`，重新啟動 Codex。
-
 ```bash
-git clone https://github.com/vincepeng518/math-tutor.git ~/.codex/skills/math-tutor
+git clone https://github.com/vincepeng518/math-tutor.git ~/.codex/skills/study-tutor
 ```
+
+重新啟動 Codex。舊版裝在 `~/.codex/skills/math-tutor` 的話，先刪掉那個資料夾，避免兩個 skill 同時存在。
